@@ -1,0 +1,1049 @@
+model,description
+01-ai-yi-1-5-6b-chat,Generación de texto
+01-ai-yi-1-5-9b-chat,Generación de texto
+01-ai-yi-1.5-34b,Generación de texto
+01-ai-yi-34b-chat,Generación de texto
+AI21-Jamba-1.5-Large,Finalización del chat
+AI21-Jamba-1.5-Mini,Finalización del chat
+ALLaM-2-7b-instruct,Finalización del chat
+Cerence-CaLLM-Edge,Finalización del chat
+CodeLlama-13b-Instruct-hf,Generación de texto
+CodeLlama-13b-Python-hf,Generación de texto
+CodeLlama-13b-Python-hf,Generación de texto
+CodeLlama-13b-hf,Generación de texto
+CodeLlama-34b-Instruct-hf,Generación de texto
+CodeLlama-34b-Python-hf,Generación de texto
+CodeLlama-34b-hf,Generación de texto
+CodeLlama-70b-Instruct-hf,Generación de texto
+CodeLlama-70b-Python-hf,Generación de texto
+CodeLlama-70b-hf,Generación de texto
+CodeLlama-7b-Instruct-hf,Generación de texto
+CodeLlama-7b-Python-hf,Generación de texto
+CodeLlama-7b-hf,Generación de texto
+Codestral-2501,Finalización del chat
+Cohere-command-r,Finalización del chat
+Cohere-command-r-08-2024,Finalización del chat
+Cohere-command-r-plus,Finalización del chat
+Cohere-command-r-plus-08-2024,Finalización del chat
+Deci-DeciCoder-1b,Generación de texto
+Deci-DeciLM-7B,Generación de texto
+Deci-DeciLM-7B-instruct,Generación de texto
+DeepSeek-R1,Finalización del chat
+DeepSeek-R1-Distilled-NPU-Optimized,Finalización del chat
+DeepSeek-V3,Finalización del chat
+DeepSeek-V3-0324,Finalización del chat
+Deepseek-R1-Distill-Llama-8B-NIM-microservice,Finalización del chat
+E.L.Y.Crop-Protection,Finalización del chat
+Gretel-Navigator-Tabular,"Finalización del chat, Generación de datos"
+Llama-2-13b,Generación de texto
+Llama-2-13b-chat,Finalización del chat
+Llama-2-70b-chat,Finalización del chat
+Llama-2-7b,Generación de texto
+Llama-2-7b-chat,Finalización del chat
+Llama-3.1-8B-Instruct-NIM-microservice,Finalización del chat
+Llama-3.2-11B-Vision-Instruct,Finalización del chat
+Llama-3.2-1B,Generación de texto
+Llama-3.2-1B-Instruct,Finalización del chat
+Llama-3.2-3B,Generación de texto
+Llama-3.2-3B-Instruct,Finalización del chat
+Llama-3.2-90B-Vision-Instruct,Finalización del chat
+Llama-3.3-70B-Instruct,Finalización del chat
+Llama-3.3-70B-Instruct-NIM-microservice,Finalización del chat
+Llama-4-Maverick-17B-128E-Instruct-FP8,Finalización del chat
+Llama-4-Scout-17B-16E,Finalización del chat
+Llama-4-Scout-17B-16E-Instruct,Finalización del chat
+Llama-Guard-3-11B-Vision,Finalización del chat
+Llama-Guard-3-1B,Finalización del chat
+Llama-Guard-3-8B,Finalización del chat
+MAI-DS-R1,Finalización del chat
+Meta-Llama-3-70B,Generación de texto
+Meta-Llama-3-70B-Instruct,Finalización del chat
+Meta-Llama-3-70B-Instruct,Finalización del chat
+Meta-Llama-3-8B,Generación de texto
+Meta-Llama-3-8B-Instruct,Finalización del chat
+Meta-Llama-3.1-405B-Instruct,Finalización del chat
+Meta-Llama-3.1-70B,Generación de texto
+Meta-Llama-3.1-70B-Instruct,Finalización del chat
+Meta-Llama-3.1-8B,Generación de texto
+Meta-Llama-3.1-8B-Instruct,Finalización del chat
+Ministral-3B,Finalización del chat
+Mistral-7B-Instruct-v0.3-NIM-microservice,Finalización del chat
+Mistral-Large-2411,Finalización del chat
+Mistral-Nemo,Finalización del chat
+Mistral-large,Finalización del chat
+Mistral-large-2407,Finalización del chat
+Mistral-small,Finalización del chat
+Mixtral-8x7B-Instruct-v0.1-NIM-microservice,Finalización del chat
+Nemotron-3-8B-Base-4k,Generación de texto
+Nemotron-3-8B-Chat-4k-SteerLM,Generación de texto
+Nemotron-3-8B-Chat-RLHF,Generación de texto
+Nemotron-3-8B-Chat-SFT,Generación de texto
+Nemotron-3-8B-Chat-SteerLM,Generación de texto
+Nemotron-3-8B-QA-4k,Generación de texto
+Phi-3-medium-128k-instruct,Finalización del chat
+Phi-3-medium-4k-instruct,Finalización del chat
+Phi-3-mini-128k-instruct,Finalización del chat
+Phi-3-mini-128k-instruct-generic-cpu,Finalización del chat
+Phi-3-mini-4k-instruct,Finalización del chat
+Phi-3-mini-4k-instruct-generic-cpu,Finalización del chat
+Phi-3-small-128k-instruct,Finalización del chat
+Phi-3-small-8k-instruct,Finalización del chat
+Phi-3-vision-128k-instruct,Finalización del chat
+Phi-3.5-MoE-instruct,Finalización del chat
+Phi-3.5-mini-instruct,Finalización del chat
+Phi-3.5-vision-instruct,Finalización del chat
+Phi-4,Finalización del chat
+Phi-4-cuda-gpu,Finalización del chat
+Phi-4-generic-cpu,Finalización del chat
+Phi-4-generic-gpu,Finalización del chat
+Phi-4-mini-instruct,Finalización del chat
+Phi-4-mini-instruct-cuda-gpu,Finalización del chat
+Phi-4-mini-instruct-generic-cpu,Finalización del chat
+Phi-4-mini-instruct-generic-gpu,Finalización del chat
+Phi-4-mini-reasoning,Finalización del chat
+Phi-4-mini-reasoning-cuda-gpu,Finalización del chat
+Phi-4-mini-reasoning-generic-cpu,Finalización del chat
+Phi-4-mini-reasoning-generic-gpu,Finalización del chat
+Phi-4-mini-reasoning-onnx,Finalización del chat
+Phi-4-mini-reasoning-qnn-npu,Finalización del chat
+Phi-4-multimodal-instruct,Finalización del chat
+Phi-4-reasoning,Finalización del chat
+Phi-4-reasoning-cuda-gpu,Finalización del chat
+Phi-4-reasoning-generic-cpu,Finalización del chat
+Phi-4-reasoning-generic-gpu,Finalización del chat
+Phi-4-reasoning-plus-onnx,Finalización del chat
+RA-FT-Optix-Food-Beverage,Finalización del chat
+Saifr-Language-Suggestion,Generación de texto
+Saifr-Risk-Interpretation,Generación de texto
+Sight-Machine-Factory-Namespace-Manager,Generación de texto
+aaditya-llama3-openbiollm-70b,Generación de texto
+abacusai-smaug-72b-v0.1,Generación de texto
+abeja-gpt-neox-japanese-2.7b,Generación de texto
+abhishekchohan-solar-10.7b-instruct-forest-dpo-v1,Generación de texto
+adasnew-t5-small-xsum,Generación de texto a texto
+agentica-org-deepcoder-14b-preview,Generación de texto
+ahmed792002-finetuning-t5-healthcare-chatbot,Generación de texto
+ai-forever-fred-t5-1.7b,Generación de texto a texto
+ai-forever-fred-t5-large,Generación de texto a texto
+ai-forever-mgpt,Generación de texto
+ai-forever-rugpt3large-based-on-gpt2,Generación de texto
+ai-forever-rugpt3small-based-on-gpt2,Generación de texto
+ai-forever-rut5-base,Generación de texto a texto
+ai-forever-rut5-large,Generación de texto a texto
+ai-mo-numinamath-7b-tir,Generación de texto
+aisingapore-llama3-8b-cpt-sea-lionv2-base,Generación de texto
+aisingapore-llama3-8b-cpt-sea-lionv2.1-instruct,Generación de texto
+akjindal53244-llama-3-1-storm-8b,Generación de texto
+akjindal53244-llama-3.1-storm-8b,Generación de texto
+alan-turing-institute-mt5-large-finetuned-mnli-xtreme-xnli,Generación de texto a texto
+alekseykorshuk-vicuna-7b,Generación de texto
+aleksickx-llama-7b-hf,Generación de texto
+alenusch-rugpt3-paraphraser,Generación de texto
+alexjercan-codet5-base-buggy-error-description,Generación de texto a texto
+alexm-nm-tinyllama-24-marlin24-4bit-g128,Generación de texto
+alexwortega-instruct-rugptlarge,Generación de texto
+allenai-led-base-16384,Generación de texto a texto
+allenai-led-large-16384,Generación de texto a texto
+allenai-led-large-16384-arxiv,Generación de texto a texto
+allenai-llama-3-1-tulu-3-70b,Generación de texto
+allenai-llama-3-1-tulu-3-8b-sft,Generación de texto
+allenai-macaw-large,Generación de texto a texto
+allenai-primera,Generación de texto a texto
+allenai-primera-multi-lexsum-source-short,Generación de texto a texto
+allenai-t5-small-squad2-question-generation,Generación de texto a texto
+allenai-tk-instruct-3b-def,Generación de texto a texto
+allenai-tk-instruct-3b-def-pos,Generación de texto a texto
+allenai-tk-instruct-base-def-pos,Generación de texto a texto
+allenai-unifiedqa-t5-3b,Generación de texto a texto
+allenai-unifiedqa-t5-base,Generación de texto a texto
+allenai-unifiedqa-t5-large,Generación de texto a texto
+allenai-unifiedqa-t5-small,Generación de texto a texto
+allenai-unifiedqa-v2-t5-large-1251000,Generación de texto a texto
+allenai-unifiedqa-v2-t5-large-1363200,Generación de texto a texto
+alpindale-llama-3-2-1b-instruct,Generación de texto
+alpindale-wizardlm-2-8x22b,Generación de texto
+amphora-finabsa,Generación de texto a texto
+andreaskoepf-pythia-1.4b-gpt4all-pretrain,Generación de texto
+anonymous-german-nlp-german-gpt2,Generación de texto
+ar4ikov-gpt2-650k-stable-diffusion-prompt-generator,Generación de texto
+ar4ikov-gpt2-medium-650k-stable-diffusion-prompt-generator,Generación de texto
+asi-gpt-fr-cased-base,Generación de texto
+asi-gpt-fr-cased-small,Generación de texto
+atlaai-selene-1-mini-llama-3-1-8b,Generación de texto
+aubmindlab-aragpt2-base,Generación de texto
+aubmindlab-aragpt2-large,Generación de texto
+automatic-promptgen-lexart,Generación de texto
+automatic-promptgen-majinai-safe,Generación de texto
+automatic-promptgen-majinai-unsafe,Generación de texto
+b3ck1-gpt-neo-125m-finetuned-beer-recipes,Generación de texto
+ba2han-llama-phi-3-dora,Generación de texto
+babbage-002,Finalizaciones
+babelscape-rebel-large,Generación de texto a texto
+babylm-t5-base-strict,Generación de texto a texto
+beir-query-gen-msmarco-t5-base-v1,Generación de texto a texto
+beir-query-gen-msmarco-t5-large-v1,Generación de texto a texto
+benjamin-gerpt2-large,Generación de texto
+beomi-koalpaca-polyglot-5.8b,Generación de texto
+beomi-llama-3-koen-8b-instruct-preview,Generación de texto
+beyond-genius-large-k2t,Generación de texto a texto
+bigcode-gpt-bigcode-santacoder,Generación de texto
+bigcode-starcoder2-3b,Generación de texto
+bigcode-starcoder2-7b,Generación de texto
+bigscience-bigscience-small-testing,Generación de texto
+bigscience-bloom-1b1,Generación de texto
+bigscience-bloom-1b7,Generación de texto
+bigscience-bloom-1b7,Generación de texto
+bigscience-bloom-3b,Generación de texto
+bigscience-bloom-560m,Generación de texto
+bigscience-bloom-7b1,Generación de texto
+bigscience-bloom-7b1-intermediate,Generación de texto
+bigscience-bloomz-1b1,Generación de texto
+bigscience-bloomz-1b7,Generación de texto
+bigscience-bloomz-3b,Generación de texto
+bigscience-bloomz-560m,Generación de texto
+bigscience-bloomz-7b1,Generación de texto
+bigscience-bloomz-7b1-mt,Generación de texto
+bigscience-mt0-base,Generación de texto a texto
+bigscience-mt0-large,Generación de texto a texto
+bigscience-mt0-small,Generación de texto a texto
+bigscience-mt0-xl,Generación de texto a texto
+bigscience-t0-3b,Generación de texto a texto
+bin12345-autocoder,Generación de texto
+biomistral-biomistral-7b,Generación de texto
+black-ink-guild-pernicious-prophecy-70b,Generación de texto
+bllossom-llama-3-2-korean-bllossom-3b,Generación de texto
+bloom-testing-test-bloomd-560m-a47152861e4132c9080d4f84ba87c7a58f556a2f997765c1f9fc9a40c4b643f3,Generación de texto
+bloom-testing-test-bloomd-560m-db788ae2594f597e839fb48fedb0895f04d853006df99f79d446b6b29c715eb7,Generación de texto
+bloomberg-keybart,Generación de texto a texto
+bramvanroy-geitje-7b-ultra,Generación de texto
+bsc-lt-alia-40b,Generación de texto
+bsc-lt-salamandra-2b,Generación de texto
+bsc-lt-salamandra-2b-base-fp8,Generación de texto
+bsc-lt-salamandra-2b-base-gptq,Generación de texto
+bsc-lt-salamandra-2b-instruct,Generación de texto
+bsc-lt-salamandra-2b-instruct-fp8,Generación de texto
+bsc-lt-salamandra-2b-instruct-gptq,Generación de texto
+bsc-lt-salamandra-7b,Generación de texto
+bsc-lt-salamandra-7b-base-fp8,Generación de texto
+bsc-lt-salamandra-7b-base-gptq,Generación de texto
+bsc-lt-salamandra-7b-instruct,Generación de texto
+bsc-lt-salamandra-7b-instruct-fp8,Generación de texto
+bsc-lt-salamandra-7b-instruct-gptq,Generación de texto
+bsc-lt-salamandrata-2b,Generación de texto
+casperhansen-llama-3-3-70b-instruct-awq,Generación de texto
+casperhansen-llama-3-70b-instruct-awq,Generación de texto
+casperhansen-llama-3-8b-instruct-awq,Generación de texto
+casperhansen-mistral-nemo-instruct-2407-awq,Generación de texto
+castorini-doc2query-t5-base-msmarco,Generación de texto a texto
+castorini-monot5-3b-msmarco-10k,Generación de texto a texto
+castorini-monot5-base-msmarco,Generación de texto a texto
+castorini-monot5-base-msmarco-10k,Generación de texto a texto
+cerebras-cerebras-gpt-1.3b,Generación de texto
+cerebras-cerebras-gpt-111m,Generación de texto
+cerebras-cerebras-gpt-2.7b,Generación de texto
+cerebras-cerebras-gpt-256m,Generación de texto
+cerebras-cerebras-gpt-590m,Generación de texto
+chainyo-alpaca-lora-7b,Generación de texto
+chanind-frame-semantic-transformer-base,Generación de texto a texto
+circulus-kobart-trans-en-ko-v2,Generación de texto a texto
+circulus-kobart-trans-ko-en-v2,Generación de texto a texto
+ck46-t5-base-hotpot-qa-qg,Generación de texto a texto
+ckip-joint-bloom-1b1-zh,Generación de texto
+ckiplab-gpt2-base-chinese,Generación de texto
+clueai-chatyuan-large-v1,Generación de texto a texto
+clueai-promptclue-base,Generación de texto a texto
+clueai-promptclue-base-v1-5,Generación de texto a texto
+codellama-codellama-13b-instruct-hf,Generación de texto
+codellama-codellama-34b-instruct-hf,Generación de texto
+codellama-codellama-7b-hf,Generación de texto
+codellama-codellama-7b-instruct-hf,Generación de texto
+codellama-codellama-7b-python-hf,Generación de texto
+codeparrot-codeparrot,Generación de texto
+codeparrot-codeparrot-small,Generación de texto
+codeparrot-codeparrot-small-multi,Generación de texto
+cognitivecomputations-dolphin-2.9-llama3-8b,Generación de texto
+cognitivecomputations-dolphin-2.9.2-phi-3-medium-abliterated,Generación de texto
+cohere-command-a,Finalización del chat
+cohereforai-c4ai-command-r-plus,Generación de texto
+cointegrated-rut5-base,Generación de texto a texto
+cointegrated-rut5-base-multitask,Generación de texto a texto
+cointegrated-rut5-base-paraphraser,Generación de texto a texto
+cristian-popa-bart-tl-ng,Generación de texto a texto
+crumb-bloom-560m-rlhf-sd2-prompter-aesthetic,Generación de texto
+csebuetnlp-banglat5-banglaparaphrase,Generación de texto a texto
+ctu-aic-mbart25-multilingual-summarization-multilarge-cs,Generación de texto a texto
+czearing-article-title-generator,Generación de texto a texto
+dahoas-pythia-125m-static-sft,Generación de texto
+daspartho-prompt-extend,Generación de texto
+databricks-dbrx-base,Generación de texto
+databricks-dbrx-instruct,Finalización del chat
+databricks-dolly-v1-6b,Generación de texto
+databricks-dolly-v2-12b,Generación de texto
+datificate-gpt2-small-spanish,Generación de texto
+davidkim205-rhea-72b-v0.5,Generación de texto
+davinci-002,Finalizaciones
+dbmdz-german-gpt2,Generación de texto
+declare-lab-flan-alpaca-base,Generación de texto a texto
+declare-lab-flan-alpaca-gpt4-xl,Generación de texto a texto
+declare-lab-flan-alpaca-large,Generación de texto a texto
+declare-lab-flan-alpaca-xl,Generación de texto a texto
+deep-learning-analytics-automatic-title-generation,Generación de texto a texto
+deep-learning-analytics-grammarcorrector,Generación de texto a texto
+deepcogito-cogito-v1-preview-llama-3b,Generación de texto
+deepcogito-cogito-v1-preview-llama-70b,Generación de texto
+deepcogito-cogito-v1-preview-llama-8b,Generación de texto
+deepcogito-cogito-v1-preview-qwen-14b,Generación de texto
+deepcogito-cogito-v1-preview-qwen-32b,Generación de texto
+deepesp-gpt2-spanish,Generación de texto
+deepmount00-llama-3-8b-ita,Generación de texto
+deeppavlov-rudialogpt3-medium-based-on-gpt2-v2,Generación de texto
+deepseek-ai-deepseek-coder-6-7b-instruct,Generación de texto
+deepseek-r1-distill-llama-8b-generic-gpu,Finalización del chat
+deepseek-r1-distill-qwen-1.5b-cuda-gpu,Finalización del chat
+deepseek-r1-distill-qwen-1.5b-generic-cpu,Finalización del chat
+deepseek-r1-distill-qwen-1.5b-generic-gpu,Finalización del chat
+deepseek-r1-distill-qwen-14b-cuda-gpu,Finalización del chat
+deepseek-r1-distill-qwen-14b-generic-cpu,Finalización del chat
+deepseek-r1-distill-qwen-14b-generic-gpu,Finalización del chat
+deepseek-r1-distill-qwen-7b-cuda-gpu,Finalización del chat
+deepseek-r1-distill-qwen-7b-generic-cpu,Finalización del chat
+deepseek-r1-distill-qwen-7b-generic-gpu,Finalización del chat
+defog-sqlcoder-7b-2,Generación de texto
+dicta-il-dictalm2-0,Generación de texto
+dicta-il-dictalm2.0,Generación de texto
+dicta-il-dictalm2.0-instruct,Generación de texto
+digit82-kobart-summarization,Generación de texto a texto
+distilbert-distilgpt2,Generación de texto
+distilgpt2,Generación de texto
+distilgpt2,Generación de texto
+drishtisharma-stablediffusion-prompt-generator-gpt-neo-125m,Generación de texto
+eachadea-vicuna-7b-1.1,Generación de texto
+echarlaix-tiny-random-phiforcausallm,Generación de texto
+efficient-large-model-gemma-2-2b-it,Generación de texto
+ehartford-wizardlm-7b-uncensored,Generación de texto
+ehristoforu-coolqwen-3b-it,Generación de texto
+eleutherai-gpt-neo-1.3b,Generación de texto
+eleutherai-gpt-neo-125m,Generación de texto
+eleutherai-gpt-neo-2.7b,Generación de texto
+eleutherai-gpt-neox-20b,Generación de texto
+eleutherai-polyglot-ko-1.3b,Generación de texto
+eleutherai-polyglot-ko-3.8b,Generación de texto
+eleutherai-polyglot-ko-5.8b,Generación de texto
+eleutherai-pythia-1.4b,Generación de texto
+eleutherai-pythia-1.4b-deduped,Generación de texto
+eleutherai-pythia-1.4b-deduped-v0,Generación de texto
+eleutherai-pythia-14m,Generación de texto
+eleutherai-pythia-160m,Generación de texto
+eleutherai-pythia-160m-deduped,Generación de texto
+eleutherai-pythia-160m-deduped-v0,Generación de texto
+eleutherai-pythia-1b,Generación de texto
+eleutherai-pythia-1b-deduped,Generación de texto
+eleutherai-pythia-1b-deduped-v0,Generación de texto
+eleutherai-pythia-2.8b,Generación de texto
+eleutherai-pythia-2.8b-deduped,Generación de texto
+eleutherai-pythia-2.8b-deduped-v0,Generación de texto
+eleutherai-pythia-31m,Generación de texto
+eleutherai-pythia-410m,Generación de texto
+eleutherai-pythia-410m-deduped-v0,Generación de texto
+eleutherai-pythia-6.9b,Generación de texto
+eleutherai-pythia-6.9b-deduped,Generación de texto
+eleutherai-pythia-6.9b-deduped-v0,Generación de texto
+eleutherai-pythia-70m,Generación de texto
+eleutherai-pythia-70m-deduped,Generación de texto
+eleutherai-pythia-70m-deduped-v0,Generación de texto
+elinas-llama-7b-hf-transformers-4.29,Generación de texto
+elnaggarlab-ankh-base,Generación de texto a texto
+elnaggarlab-ankh-large,Generación de texto a texto
+elyza-llama-3-elyza-jp-8b,Generación de texto
+emelnov-keyt5-tags-custom,Generación de texto a texto
+emelnov-t5-summarization-g-b,Generación de texto a texto
+emelnov-t5-tags-g-b,Generación de texto a texto
+emelnov-t5-title-g-b,Generación de texto a texto
+equall-saul-7b-instruct-v1,Generación de texto
+eugenesiow-bart-paraphrase,Generación de texto a texto
+exscientia-igt5-unpaired,Generación de texto
+fabiochiu-t5-base-tag-generation,Generación de texto a texto
+fabiochiu-t5-small-medium-title-generation,Generación de texto a texto
+facebook-blenderbot-1b-distill,Conversacional
+facebook-blenderbot-3b,Conversacional
+facebook-blenderbot-400m-distill,Conversacional
+facebook-blenderbot-90m,Conversacional
+facebook-blenderbot-small-90m,Conversacional
+facebook-galactica-1.3b,Generación de texto
+facebook-galactica-125m,Generación de texto
+facebook-galactica-6.7b,Generación de texto
+facebook-incoder-1b,Generación de texto
+facebook-m2m100-1.2b,Generación de texto a texto
+facebook-m2m100-418m,Generación de texto a texto
+facebook-mbart-large-50,Generación de texto a texto
+facebook-mbart-large-50-many-to-one-mmt,Generación de texto a texto
+facebook-mbart-large-50-one-to-many-mmt,Generación de texto a texto
+facebook-mgenre-wiki,Generación de texto a texto
+facebook-opt-1.3b,Generación de texto
+facebook-opt-125m,Generación de texto
+facebook-opt-2.7b,Generación de texto
+facebook-opt-350m,Generación de texto
+facebook-opt-6.7b,Generación de texto
+facebook-opt-iml-1.3b,Generación de texto
+facebook-opt-iml-max-1.3b,Generación de texto
+facebook-xglm-1.7b,Generación de texto
+facebook-xglm-564m,Generación de texto
+facebook-xglm-7.5b,Generación de texto
+financial-reports-analysis,Finalización del chat
+financial-reports-analysis-v2,Finalización del chat
+flax-community-dansk-gpt-wiki,Generación de texto
+flax-community-gpt-2-spanish,Generación de texto
+flax-community-t5-recipe-generation,Generación de texto a texto
+flexudy-t5-base-multi-sentence-doctor,Generación de texto a texto
+fnlp-bart-base-chinese,Generación de texto a texto
+fnlp-bart-large-chinese,Generación de texto a texto
+fnlp-cpt-base,Generación de texto a texto
+fredzhang7-anime-anything-promptgen-v2,Generación de texto
+fredzhang7-danbooru-tag-generator,Generación de texto
+fredzhang7-distilgpt2-stable-diffusion-v2,Generación de texto
+freedomintelligence-acegpt-v1.5-13b,Generación de texto
+fugaku-llm-fugaku-llm-13b,Generación de texto
+gagan3012-k2t,Generación de texto a texto
+gagan3012-k2t-base,Generación de texto a texto
+ganjinzero-biobart-large,Generación de texto a texto
+ganjinzero-biobart-v2-base,Generación de texto a texto
+ganjinzero-biobart-v2-large,Generación de texto a texto
+geinitz-gpt2-medium-hemingway,Generación de texto
+genezc-minichat-1.5-3b,Generación de texto
+ghost-x-ghost-8b-beta-1608,Generación de texto
+gogamza-kobart-summarization,Generación de texto a texto
+gokaygokay-flux-prompt-enhance,Generación de texto a texto
+google-byt5-base,Generación de texto a texto
+google-byt5-large,Generación de texto a texto
+google-byt5-small,Generación de texto a texto
+google-byt5-xl,Generación de texto a texto
+google-flan-t5-base,Generación de texto
+google-flan-t5-large,Generación de texto
+google-flan-t5-small,Generación de texto
+google-flan-t5-xl,Generación de texto
+google-flan-t5-xxl,Generación de texto
+google-long-t5-local-base,Generación de texto a texto
+google-long-t5-tglobal-base,Generación de texto a texto
+google-long-t5-tglobal-large,Generación de texto a texto
+google-long-t5-tglobal-xl,Generación de texto a texto
+google-mt5-base,Generación de texto a texto
+google-mt5-large,Generación de texto a texto
+google-mt5-small,Generación de texto a texto
+google-mt5-xl,Generación de texto a texto
+google-pegasus-x-large,Generación de texto a texto
+google-switch-base-8,Generación de texto a texto
+google-t5-base-lm-adapt,Generación de texto a texto
+google-t5-efficient-mini,Generación de texto a texto
+google-t5-efficient-tiny,Generación de texto a texto
+google-t5-large-lm-adapt,Generación de texto a texto
+google-t5-large-ssm,Generación de texto a texto
+google-t5-large-ssm-nq,Generación de texto a texto
+google-t5-large-ssm-nqo,Generación de texto a texto
+google-t5-small-lm-adapt,Generación de texto a texto
+google-t5-small-ssm-nq,Generación de texto a texto
+google-t5-v1-1-base,Generación de texto a texto
+google-t5-v1-1-large,Generación de texto a texto
+google-t5-v1-1-small,Generación de texto a texto
+google-t5-v1-1-xl,Generación de texto a texto
+google-t5-xl-lm-adapt,Generación de texto a texto
+gpt-35-turbo,Finalización del chat
+gpt-35-turbo-16k,Finalización del chat
+gpt-35-turbo-instruct,Finalización del chat
+gpt-4,Finalización del chat
+gpt-4-32k,Finalización del chat
+gpt-4.1,Finalización del chat
+gpt-4.1-mini,Finalización del chat
+gpt-4.1-nano,Finalización del chat
+gpt-4.5-preview,Finalización del chat
+gpt-4o,Finalización del chat
+gpt-4o-mini,Finalización del chat
+gpt2,Generación de texto
+gpt2,Generación de texto
+gpt2-large,Generación de texto
+gpt2-large,Generación de texto
+gpt2-medium,Generación de texto
+gpt2-medium,Generación de texto
+gpt2-xl,Generación de texto
+grabbe-gymnasium-detmold-grabbe-ai,Generación de texto
+gradientai-llama-3-8b-instruct-262k,Generación de texto
+gradientai-llama-3-8b-instruct-gradient-1048k,Generación de texto
+groq-llama-3-groq-70b-tool-use,Generación de texto
+groq-llama-3-groq-8b-tool-use,Generación de texto
+gustavosta-magicprompt-dalle,Generación de texto
+gustavosta-magicprompt-stable-diffusion,Generación de texto
+h2oai-h2o-danube3-4b-chat,Generación de texto
+hakurei-lit-6b,Generación de texto
+heegyu-gpt2-emotion,Generación de texto
+hetpandya-t5-base-tapaco,Generación de texto a texto
+hf-internal-testing-tiny-random-bloom,Generación de texto
+hf-internal-testing-tiny-random-ctrllmheadmodel,Generación de texto
+hf-internal-testing-tiny-random-rembertforcausallm,Generación de texto
+hf-internal-testing-tiny-random-xglmforcausallm,Generación de texto
+hfl-chinese-llama-2-7b,Generación de texto
+hfl-chinese-xlnet-base,Generación de texto
+hugging-quants-meta-llama-3-1-70b-instruct-awq-int4,Generación de texto
+hugging-quants-meta-llama-3-1-8b-instruct-awq-int4,Generación de texto
+hugging-quants-meta-llama-3-1-8b-instruct-gptq-int4,Generación de texto
+huggingfaceh4-zephyr-7b-beta,Generación de texto
+huggingfacetb-smollm-1-7b,Generación de texto
+huggingfacetb-smollm-1.7b,Generación de texto
+huggingfacetb-smollm-135m,Generación de texto
+huggingfacetb-smollm-135m-instruct,Generación de texto
+huggingfacetb-smollm-360m,Generación de texto
+huggingfacetb-smollm2-1-7b,Generación de texto
+huggingfacetb-smollm2-135m,Generación de texto
+huggingfacetb-smollm2-360m,Generación de texto
+hugherinit-hi,Generación de texto a texto
+huihui-ai-llama-3-3-70b-instruct-abliterated,Generación de texto
+humarin-chatgpt-paraphraser-on-t5-base,Generación de texto a texto
+hyunwoongko-asian-bart-ecjk,Generación de texto a texto
+hyunwoongko-ctrlsum-cnndm,Generación de texto a texto
+hyunwoongko-kobart,Generación de texto a texto
+iacopo-shakespear-gpt2,Generación de texto
+iarfmoose-t5-base-question-generator,Generación de texto a texto
+ibm-knowgl-large,Generación de texto a texto
+idea-ccnl-randeng-bart-139m-summary,Generación de texto a texto
+idea-ccnl-randeng-t5-77m-multitask-chinese,Generación de texto a texto
+idea-ccnl-randeng-t5-784m-multitask-chinese,Generación de texto a texto
+idea-ccnl-wenzhong-gpt2-110m,Generación de texto
+idea-ccnl-wenzhong2.0-gpt2-3.5b-chinese,Generación de texto
+ilyagusev-fred-t5-ru-turbo-alpaca,Generación de texto
+infermatic-llama-3-3-70b-instruct-fp8-dynamic,Generación de texto
+infermatic-magnum-v4-72b-fp8-dynamic,Generación de texto
+infly-opencoder-8b-instruct,Generación de texto
+ingen51-dialogpt-medium-gpt4,Conversacional
+intel-neural-chat-7b-v3-1,Generación de texto
+intel-neural-chat-7b-v3-3,Generación de texto
+inu-ai-dolly-japanese-gpt-1b,Conversacional
+it5-it5-large-question-generation,Generación de texto a texto
+jais-30b-chat,Finalización del chat
+jamandteastudios-deepseek-r1-distill-qwen-32b-fp8-dynamic,Generación de texto
+jaynlp-t5-large-samsum,Generación de texto a texto
+jinaai-readerlm-v2,Generación de texto
+jpwahle-t5-large-word-sense-disambiguation,Generación de texto a texto
+juierror-flan-t5-text2sql-with-schema,Generación de texto a texto
+juierror-text-to-sql-with-table-schema,Generación de texto a texto
+kaitchup-llama-3-3-70b-instruct-autoround-gptq-4bit,Generación de texto
+katuni4ka-tiny-random-dbrx,Generación de texto
+katuni4ka-tiny-random-falcon-40b,Generación de texto
+kblueleaf-dantaggen-delta-rev2,Generación de texto
+kblueleaf-tipo-200m-ft2,Generación de texto
+kes-t5-kes,Generación de texto a texto
+keti-air-ke-t5-base,Generación de texto a texto
+keti-air-ke-t5-large,Generación de texto a texto
+keti-air-ke-t5-small,Generación de texto a texto
+kirili4ik-mbart-rudialogsum,Generación de texto a texto
+kmewhort-stable-diffusion-prompt-bolster,Generación de texto
+koboldai-fairseq-dense-125m,Generación de texto
+koboldai-fairseq-dense-2.7b-nerys,Generación de texto
+koboldai-fairseq-dense-6.7b-shinen,Generación de texto
+koboldai-gpt-j-6b-adventure,Generación de texto
+koboldai-gpt-j-6b-janeway,Generación de texto
+koboldai-gpt-j-6b-shinen,Generación de texto
+koboldai-gpt-j-6b-skein,Generación de texto
+koboldai-gpt-neo-1.3b-adventure,Generación de texto
+koboldai-gpt-neo-2.7b-aid,Generación de texto
+koboldai-gpt-neo-2.7b-horni,Generación de texto
+koboldai-gpt-neo-2.7b-horni-ln,Generación de texto
+koboldai-gpt-neo-2.7b-janeway,Generación de texto
+koboldai-gpt-neo-2.7b-shinen,Generación de texto
+koboldai-opt-2.7b-erebus,Generación de texto
+koboldai-opt-6.7b-erebus,Generación de texto
+koboldai-opt-6.7b-nerybus-mix,Generación de texto
+koboldai-opt-6b-nerys-v2,Generación de texto
+koboldai-ppo-pygway-6b-mix,Generación de texto
+kosbu-llama-3-3-70b-instruct-awq,Generación de texto
+kykim-bertshared-kor-base,Generación de texto a texto
+laituan245-molt5-large-caption2smiles,Generación de texto a texto
+langboat-mengzi-t5-base,Generación de texto a texto
+latitudegames-wayfarer-12b,Generación de texto
+lemon07r-gemma-2-ataraxy-9b,Generación de texto
+lemon234071-t5-base-chinese,Generación de texto a texto
+lenguajenaturalai-leniachat-qwen2-1.5b-v0,Generación de texto
+leolm-leo-hessianai-70b-chat,Generación de texto
+livekit-turn-detector,Generación de texto
+lizhuang144-flan-t5-base-vg-factual-sg,Generación de texto
+lmqg-t5-small-tweetqa-qa,Generación de texto a texto
+lmsys-fastchat-t5-3b-v1.0,Generación de texto a texto
+lmsys-vicuna-7b-delta-v0,Generación de texto
+lmsys-vicuna-7b-delta-v1.1,Generación de texto
+luodian-llama-7b-hf,Generación de texto
+lvwerra-gpt2-imdb,Generación de texto
+lvwerra-t5-imdb,Generación de texto a texto
+m42-health-llama3-med42-70b,Generación de texto
+m42-health-llama3-med42-8b,Generación de texto
+makers-lab-indus-1.1b-it,Generación de texto
+malteos-bloom-6b4-clp-german,Generación de texto
+mariorossi-t5-base-finetuned-question-answering,Generación de texto a texto
+maryaai-opus-mt-ar-en-finetuned-ar-to-en,Generación de texto a texto
+maryaai-opus-mt-en-ar-finetuned-math-13-10-en-to-ar,Generación de texto a texto
+maziyarpanahi-llama-3-70b-instruct-dpo-v0.2,Generación de texto
+mbzuai-lamini-flan-t5-248m,Generación de texto a texto
+mbzuai-lamini-flan-t5-783m,Generación de texto a texto
+mbzuai-lamini-gpt-1.5b,Generación de texto
+meli-gpt2-prompt,Generación de texto
+merry-aid-neo-125m,Generación de texto
+meta-llama-meta-llama-3-70b-instruct,Generación de texto
+meta-llama-meta-llama-3-8b-instruct,Generación de texto
+meta-llama-meta-llama-guard-2-8b,Generación de texto
+michau-t5-base-en-generate-headline,Generación de texto a texto
+microsoft-Orca-2-13b,Generación de texto
+microsoft-Orca-2-7b,Generación de texto
+microsoft-biogpt,Generación de texto
+microsoft-biogpt-large,Generación de texto
+microsoft-biogpt-large-pubmedqa,Generación de texto
+microsoft-bitnet-b1-58-2b-4t,Generación de texto
+microsoft-codegpt-small-java-adaptedgpt2,Generación de texto
+microsoft-codereviewer,Generación de texto a texto
+microsoft-dialogpt-large,Conversacional
+microsoft-dialogpt-medium,Conversacional
+microsoft-dialogpt-small,Conversacional
+microsoft-git-base-vatex,Generación de texto
+microsoft-godel-v1-1-base-seq2seq,Conversacional
+microsoft-godel-v1-1-large-seq2seq,Conversacional
+microsoft-phi-1-5,Generación de texto
+microsoft-phi-1-5,Generación de texto
+microsoft-phi-2,Generación de texto
+microsoft-phi-2,Generación de texto
+microsoft-phi-4-reasoning-plus,Generación de texto
+microsoft-promptist,Generación de texto
+microsoft-prophetnet-large-uncased,Generación de texto a texto
+microsoft-prophetnet-large-uncased-squad-qg,Generación de texto a texto
+mims-harvard-txagent-t1-llama-3-1-8b,Generación de texto
+mingzhong-dialogled-base-16384,Generación de texto a texto
+mingzhong-dialogled-large-5120,Generación de texto a texto
+mingzhong-unieval-fact,Generación de texto a texto
+mingzhong-unieval-sum,Generación de texto a texto
+ministral-ministral-3b-instruct,Generación de texto
+mistral-community-Mixtral-8x22B-v0-1,Generación de texto
+mistral-community-mistral-7b-v0.2,Generación de texto
+mistral-medium-2505,"Finalización del chat, Conversacional, Clasificación de imágenes"
+mistral-small-2503,"Finalización del chat, Completions, Conversational, Image classification, Question answering, Summarization, Table question answering, Text classification, Text generation, Text summarization, Text to text generation, Text translation, Translation,Visual question answering"
+mistralai-Mistral-7B-Instruct-v0-2,Finalización del chat
+mistralai-Mistral-7B-Instruct-v0-2-generic-cpu,Finalización del chat
+mistralai-Mistral-7B-Instruct-v01,Finalización del chat
+mistralai-Mistral-7B-v01,Generación de texto
+mistralai-Mixtral-8x22B-Instruct-v0-1,Finalización del chat
+mistralai-Mixtral-8x22B-v0-1,Generación de texto
+mistralai-Mixtral-8x7B-Instruct-v01,Finalización del chat
+mistralai-Mixtral-8x7B-v01,Generación de texto
+mistralai-mistral-7b-instruct-v0.2,Generación de texto
+mistralai-mixtral-8x22b-instruct-v0.1,Generación de texto
+mixedbread-ai-mxbai-rerank-base-v2,Generación de texto
+mixedbread-ai-mxbai-rerank-large-v2,Generación de texto
+ml6team-mt5-small-german-query-generation,Generación de texto a texto
+mlp-ktlim-llama-3-korean-bllossom-8b,Generación de texto
+mlx-community-qwen2-5-coder-32b-instruct-4bit,Generación de texto
+mrm8488-t5-base-finetuned-common-gen,Generación de texto a texto
+mrm8488-t5-base-finetuned-emotion,Generación de texto a texto
+mrm8488-t5-base-finetuned-imdb-sentiment,Generación de texto a texto
+mrm8488-t5-base-finetuned-question-generation-ap,Generación de texto a texto
+mrm8488-t5-base-finetuned-span-sentiment-extraction,Generación de texto a texto
+mrm8488-t5-base-finetuned-squadv2,Generación de texto a texto
+mrm8488-t5-base-finetuned-summarize-news,Generación de texto a texto
+mrm8488-t5-base-finetuned-wikisql,Generación de texto a texto
+mrm8488-t5-small-finetuned-emotion,Generación de texto a texto
+mtsair-multiverse-70b,Generación de texto
+mywateriswet-shuanbot,Conversacional
+naltukhov-joke-generator-rus-t5,Generación de texto a texto
+ncfrey-chemgpt-1.2b,Generación de texto
+neko-institute-of-science-llama-7b-hf,Generación de texto
+neko-institute-of-science-pygmalion-7b,Generación de texto
+nferruz-protgpt2,Generación de texto
+ninedaywang-polycoder-0.4b,Generación de texto
+ninedaywang-polycoder-160m,Generación de texto
+ninedaywang-polycoder-2.7b,Generación de texto
+nitral-ai-captain-eris-violet-v0-420-12b,Generación de texto
+nlpcloud-instruct-gpt-j-fp16,Generación de texto
+nm-testing-tinyllama-1-1b-compressed-tensors-kv-cache-scheme,Generación de texto
+norallm-normistral-7b-warm,Generación de texto
+norod78-hebrew-bad-wiki-gpt-neo-tiny,Generación de texto
+nousresearch-hermes-2-pro-llama-3-8b,Generación de texto
+nousresearch-hermes-3-llama-3-1-8b,Generación de texto
+nousresearch-llama-2-7b-chat-hf,Generación de texto
+nousresearch-llama-2-7b-chat-hf,Generación de texto
+nousresearch-llama-2-7b-hf,Generación de texto
+nousresearch-llama-3-2-1b,Generación de texto
+nousresearch-meta-llama-3-70b-instruct,Generación de texto
+nousresearch-meta-llama-3-8b,Generación de texto
+nousresearch-meta-llama-3-8b-instruct,Generación de texto
+nousresearch-nous-hermes-2-mistral-7b-dpo,Generación de texto
+ntas-charles-dickens-gpt2,Generación de texto
+numind-nuextract-tiny,Generación de texto
+nvidia-llama-3-1-nemotron-nano-8b-v1,Generación de texto
+nvidia-llama3-chatqa-1.5-70b,Generación de texto
+nvidia-llama3-chatqa-1.5-8b,Generación de texto
+nytk-puli-gpt-2,Generación de texto
+o1,Finalización del chat
+o1-mini,Finalización del chat
+o1-preview,Finalización del chat
+o3,Finalización del chat
+o3-mini,Finalización del chat
+o4-mini,Finalización del chat
+oliverguhr-spelling-correction-english-base,Generación de texto a texto
+openai-community-gpt2,Generación de texto
+openai-community-gpt2-large,Generación de texto
+openai-community-gpt2-medium,Generación de texto
+openai-community-gpt2-xl,Generación de texto
+openai-gpt,Generación de texto
+openchat-openchat-3-5-0106,Generación de texto
+openchat-openchat-3-5-1210,Generación de texto
+optimalscale-gpt-neo2.7b-inst-tuning,Generación de texto
+orenguteng-llama-3-1-8b-lexi-uncensored-v2,Generación de texto
+orenguteng-llama-3-8b-lexi-uncensored,Generación de texto
+osllmai-community-llama-3-2-1b,Generación de texto
+p1atdev-dart-v2-moe-sft,Generación de texto
+patrickvonplaten-led-large-16384-pubmed,Generación de texto a texto
+peft-internal-testing-tiny-dummy-qwen2,Generación de texto
+persiannlp-mt5-large-parsinlu-opus-translation-fa-en,Generación de texto a texto
+petals-team-stablebeluga2,Generación de texto
+philschmid-flan-t5-base-samsum,Generación de texto a texto
+philschmid-instruct-igel-001,Generación de texto
+pi3141-dialogpt-medium-elon-3,Conversacional
+pierreguillou-gpt2-small-portuguese,Generación de texto
+pierreguillou-t5-base-qa-squad-v1.1-portuguese,Generación de texto a texto
+pinkmanlove-llama-7b-hf,Generación de texto
+plantl-gob-es-gpt2-large-bne,Generación de texto
+potsawee-t5-large-generation-squad-questionanswer,Generación de texto a texto
+pranavpsv-gpt2-genre-story-generator,Generación de texto
+prithivida-grammar-error-correcter-v1,Generación de texto a texto
+prithivida-informal-to-formal-styletransfer,Generación de texto a texto
+prithivida-parrot-paraphraser-on-t5,Generación de texto a texto
+projecte-aina-FLOR-1-3B,Generación de texto
+projecte-aina-FLOR-1-3B-Instructed,Generación de texto
+projecte-aina-FLOR-6-3B,Generación de texto
+projecte-aina-FLOR-6-3B-Instructed,Generación de texto
+projecte-aina-aguila-7b,Generación de texto
+prometheus-eval-prometheus-7b-v2.0,Generación de texto a texto
+prometheus-eval-prometheus-8x7b-v2.0,Generación de texto a texto
+proxectonos-llama-3-1-carballo,Generación de texto
+prunaai-arcee-ai-arcee-agent-bnb-4bit-smashed,Generación de texto
+pszemraj-flan-t5-large-grammar-synthesis,Generación de texto a texto
+pszemraj-grammar-synthesis-small,Generación de texto a texto
+pygmalionai-pygmalion-1.3b,Conversacional
+pygmalionai-pygmalion-2.7b,Conversacional
+pygmalionai-pygmalion-350m,Conversacional
+qiliang-bart-large-cnn-samsum-chatgpt-v3,Generación de texto a texto
+qiliang-bart-large-cnn-samsum-electrifai-v10,Generación de texto a texto
+qwen-qwen1-5-0-5b,Generación de texto
+qwen-qwen1-5-0-5b-chat,Generación de texto
+qwen-qwen1-5-1-8b,Generación de texto
+qwen-qwen1-5-1-8b-chat,Generación de texto
+qwen-qwen1-5-14b,Generación de texto
+qwen-qwen1-5-14b-chat,Generación de texto
+qwen-qwen1-5-32b-chat,Generación de texto
+qwen-qwen1-5-4b-chat,Generación de texto
+qwen-qwen1-5-7b,Generación de texto
+qwen-qwen1-5-7b-chat,Generación de texto
+qwen-qwen1.5-110b-chat,Generación de texto
+qwen-qwen2-0-5b,Generación de texto
+qwen-qwen2-0-5b-instruct,Generación de texto
+qwen-qwen2-1-5b,Generación de texto
+qwen-qwen2-1-5b-instruct,Generación de texto
+qwen-qwen2-1.5b,Generación de texto
+qwen-qwen2-5-0-5b,Generación de texto
+qwen-qwen2-5-0-5b-instruct,Generación de texto
+qwen-qwen2-5-1-5b,Generación de texto
+qwen-qwen2-5-1-5b-instruct,Generación de texto
+qwen-qwen2-5-14b-instruct,Generación de texto
+qwen-qwen2-5-14b-instruct-1m,Generación de texto
+qwen-qwen2-5-32b-instruct,Generación de texto
+qwen-qwen2-5-3b-instruct,Generación de texto
+qwen-qwen2-5-72b,Generación de texto
+qwen-qwen2-5-72b-instruct,Generación de texto
+qwen-qwen2-5-7b,Generación de texto
+qwen-qwen2-5-7b-instruct,Generación de texto
+qwen-qwen2-5-7b-instruct-1m,Generación de texto
+qwen-qwen2-5-7b-instruct-gptq-int4,Generación de texto
+qwen-qwen2-5-coder-0-5b,Generación de texto
+qwen-qwen2-5-coder-0-5b-instruct,Generación de texto
+qwen-qwen2-5-coder-1-5b,Generación de texto
+qwen-qwen2-5-coder-1-5b-instruct,Generación de texto
+qwen-qwen2-5-coder-1-5b-instruct,Generación de texto
+qwen-qwen2-5-coder-14b-instruct,Generación de texto
+qwen-qwen2-5-coder-32b,Generación de texto
+qwen-qwen2-5-coder-32b-instruct,Generación de texto
+qwen-qwen2-5-coder-32b-instruct-gptq-int4,Generación de texto
+qwen-qwen2-5-coder-3b-instruct,Generación de texto
+qwen-qwen2-5-coder-3b-instruct-awq,Generación de texto
+qwen-qwen2-5-coder-7b,Generación de texto
+qwen-qwen2-5-coder-7b-instruct,Generación de texto
+qwen-qwen2-5-coder-7b-instruct-gptq-int4,Generación de texto
+qwen-qwen2-5-math-1-5b,Generación de texto
+qwen-qwen2-5-math-1-5b-instruct,Generación de texto
+qwen-qwen2-5-math-7b,Generación de texto
+qwen-qwen2-5-math-7b-instruct,Generación de texto
+qwen-qwen2-72b-instruct,Generación de texto
+qwen-qwen2-7b,Generación de texto
+qwen-qwen2-7b-instruct,Generación de texto
+qwen-qwq-32b,Generación de texto
+qwen-qwq-32b-preview,Generación de texto
+qwen2.5-0.5b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-0.5b-instruct-generic-gpu,Finalización del chat
+qwen2.5-1.5b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-1.5b-instruct-generic-cpu,Finalización del chat
+qwen2.5-1.5b-instruct-generic-gpu,Finalización del chat
+qwen2.5-14b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-14b-instruct-generic-cpu,Finalización del chat
+qwen2.5-14b-instruct-generic-gpu,Finalización del chat
+qwen2.5-14b-instruct-generic-gpu,Finalización del chat
+qwen2.5-7b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-7b-instruct-generic-cpu,Finalización del chat
+qwen2.5-7b-instruct-generic-gpu,Finalización del chat
+qwen2.5-coder-0.5b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-coder-0.5b-instruct-generic-cpu,Finalización del chat
+qwen2.5-coder-0.5b-instruct-generic-cpu,Finalización del chat
+qwen2.5-coder-0.5b-instruct-generic-gpu,Finalización del chat
+qwen2.5-coder-1.5b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-coder-1.5b-instruct-generic-cpu,Finalización del chat
+qwen2.5-coder-1.5b-instruct-generic-gpu,Finalización del chat
+qwen2.5-coder-14b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-coder-14b-instruct-generic-cpu,Finalización del chat
+qwen2.5-coder-14b-instruct-generic-gpu,Finalización del chat
+qwen2.5-coder-7b-instruct-cuda-gpu,Finalización del chat
+qwen2.5-coder-7b-instruct-generic-cpu,Finalización del chat
+qwen2.5-coder-7b-instruct-generic-gpu,Finalización del chat
+rakuten-rakutenai-7b,Generación de texto
+ramsrigouthamg-t5-boolean-questions,Generación de texto a texto
+ramsrigouthamg-t5-large-paraphraser-diverse-high-quality,Generación de texto a texto
+ramsrigouthamg-t5-paraphraser,Generación de texto a texto
+ramsrigouthamg-t5-sentence-paraphraser,Generación de texto a texto
+ramsrigouthamg-t5-squad-v1,Generación de texto a texto
+redwoodresearch-math-pwd-lock-deepseek-math7b-on-weak-pythia1b,Generación de texto
+rinna-japanese-gpt-1b,Generación de texto
+rinna-japanese-gpt2-medium,Generación de texto
+rinna-japanese-gpt2-small,Generación de texto
+rinna-japanese-gpt2-xsmall,Generación de texto
+rlhflow-llama3-1-8b-prm-deepseek-data,Generación de texto
+roborovski-superprompt-v1,Generación de texto
+robowaifudev-megatron-gpt2-345m,Generación de texto
+rucaibox-mvp,Generación de texto a texto
+sail-sailor-0.5b,Generación de texto
+sail-sailor-1.8b-chat,Generación de texto
+sakanaai-tinyswallow-1-5b,Generación de texto
+salesforce-bart-large-xsum-samsum,Generación de texto a texto
+salesforce-codegen-2b-mono,Generación de texto
+salesforce-codegen-2b-multi,Generación de texto
+salesforce-codegen-2b-nl,Generación de texto
+salesforce-codegen-350m-mono,Generación de texto
+salesforce-codegen-350m-multi,Generación de texto
+salesforce-codegen-350m-nl,Generación de texto
+salesforce-codegen-6b-mono,Generación de texto
+salesforce-codegen-6b-multi,Generación de texto
+salesforce-codet5-base,Generación de texto a texto
+salesforce-codet5-base-multi-sum,Generación de texto a texto
+salesforce-codet5-large,Generación de texto a texto
+salesforce-codet5-large-ntp-py,Generación de texto a texto
+salesforce-codet5-small,Generación de texto a texto
+sander-wood-text-to-music,Generación de texto a texto
+sarvamai-openhathi-7b-hi-v0.1-base,Generación de texto
+sarvamai-sarvam-2b-v0.5,Generación de texto
+satvikag-chatbot,Conversacional
+scb10x-llama-3-typhoon-v1.5x-70b-instruct,Generación de texto
+scb10x-typhoon-7b-instruct-02-19-2024,Generación de texto
+shahules786-blade2blade-t5-base,Generación de texto a texto
+shenzhi-wang-llama3-8b-chinese-chat,Generación de texto
+shibing624-bart4csc-base-chinese,Generación de texto a texto
+shibing624-mengzi-t5-base-chinese-correction,Generación de texto a texto
+silma-ai-silma-9b-instruct-v1.0,Generación de texto
+skt-ko-gpt-trinity-1.2b-v0.5,Generación de texto
+skt-kogpt2-base-v2,Generación de texto
+snorkelai-sdnet,Generación de texto a texto
+snowflake-arctic-base,Generación de texto
+snowflake-arctic-instruct,Finalización del chat
+snrspeaks-keyphrasetransformer,Generación de texto a texto
+snrspeaks-t5-one-line-summary,Generación de texto a texto
+solidrust-hermes-3-llama-3-1-8b-awq,Generación de texto
+solidrust-mistral-7b-instruct-v0-3-awq,Generación de texto
+sonoisa-t5-base-japanese,Generación de texto
+sonoisa-t5-base-japanese-title-generation,Generación de texto a texto
+speakleash-bielik-11b-v2-1-instruct,Generación de texto
+speakleash-bielik-11b-v2-3-instruct,Generación de texto
+speakleash-bielik-11b-v2-3-instruct-fp8,Generación de texto
+sreenington-phi-3-mini-4k-instruct-awq,Generación de texto
+sshleifer-student-marian-en-ro-6-1,Generación de texto a texto
+sshleifer-tiny-ctrl,Generación de texto
+stabilityai-stablelm-base-alpha-3b,Generación de texto
+stabilityai-stablelm-tuned-alpha-3b,Generación de texto
+stancld-longt5-tglobal-large-16384-pubmed-3k-steps,Generación de texto a texto
+stanford-crfm-alias-gpt2-small-x21,Generación de texto
+stanford-crfm-biomedlm,Generación de texto
+stanfordnlp-steamshp-flan-t5-large,Generación de texto a texto
+state-spaces-mamba-130m-hf,Generación de texto
+stevhliu-my-awesome-billsum-model,Generación de texto a texto
+succinctly-text2image-prompt-generator,Generación de texto
+sultan-arabict5-base,Generación de texto a texto
+supply-chain-trade-regulations,Finalización del chat
+supply-chain-trade-regulations-v2,Finalización del chat
+suva-uptag-keyphrase-model,Generación de texto a texto
+tabbyml-j-350m,Generación de texto
+taeminlee-kogpt2,Generación de texto
+tanrei-gptsan-japanese,Generación de texto
+tehvenom-dolly-malion-6b,Generación de texto
+tehvenom-dolly-shygmalion-6b,Generación de texto
+tehvenom-gpt-j-pyg-ppo-6b,Generación de texto
+tehvenom-gpt-j-pyg-ppo-6b-dev-v8p4,Generación de texto
+tehvenom-ppo-pygway-v8p4-dev-6b,Generación de texto
+tehvenom-ppo-shygmalion-6b,Generación de texto
+teknium-openhermes-2-5-mistral-7b,Generación de texto
+teknium-openhermes-2.5-mistral-7b,Generación de texto
+tenyx-llama3-tenyxchat-70b,Generación de texto
+thebloke-koala-7b-hf,Generación de texto
+thebloke-llama-2-7b-gptq,Generación de texto
+thebloke-meditron-7b-awq,Generación de texto
+thebloke-mistral-7b-instruct-v0-2-awq,Generación de texto
+thebloke-mistral-7b-instruct-v0-2-gptq,Generación de texto
+thebloke-mixtral-8x7b-instruct-v0-1-awq,Generación de texto
+thebloke-mixtral-8x7b-instruct-v0-1-gptq,Generación de texto
+thebloke-tinyllama-1-1b-chat-v0-3-gptq,Generación de texto
+thebloke-vicuna-7b-1.1-hf,Generación de texto
+thebloke-wizardlm-7b-hf,Generación de texto
+third-intellect-phi-3-mini-4k-instruct-orca-math-word-problems-200k-model-16bit,Generación de texto
+thomasnlg-t5-qa-squad2neg-en,Generación de texto a texto
+thomasnlg-t5-qg-squad1-en,Generación de texto a texto
+ticlazau-starcoder2-15b-instruct-rpgle,Generación de texto
+tiiuae-falcon-40b,Generación de texto
+tiiuae-falcon-40b,Generación de texto
+tiiuae-falcon-40b-instruct,Generación de texto
+tiiuae-falcon-7b,Generación de texto
+tiiuae-falcon-7b,Generación de texto
+tiiuae-falcon-7b-instruct,Generación de texto
+tiiuae-falcon3-10b-instruct,Generación de texto
+tiiuae-falcon3-1b-instruct,Generación de texto
+tiiuae-falcon3-3b-instruct,Generación de texto
+tinkoff-ai-rudialogpt-medium,Conversacional
+tinyllama-tinyllama-1-1b-chat-v1-0,Generación de texto
+tinyllama-tinyllama-1-1b-intermediate-step-1431k-3t,Generación de texto
+tinyllama-tinyllama-1.1b-chat-v1.0,Generación de texto
+titanml-tiny-mixtral,Generación de texto
+titanml-tiny-mixtral-awq-4bit,Generación de texto
+toddgoldfarb-cadet-tiny,Conversacional
+togethercomputer-gpt-jt-moderation-6b,Generación de texto
+togethercomputer-pythia-chat-base-7b,Generación de texto
+togethercomputer-redpajama-incite-base-3b-v1,Generación de texto
+togethercomputer-redpajama-incite-base-7b-v0.1,Generación de texto
+togethercomputer-redpajama-incite-chat-3b-v1,Generación de texto
+togethercomputer-redpajama-incite-chat-7b-v0.1,Generación de texto
+togethercomputer-redpajama-incite-instruct-3b-v1,Generación de texto
+togethercomputer-redpajama-incite-instruct-7b-v0.1,Generación de texto
+tokyotech-llm-llama-3-1-swallow-8b-v0-1,Generación de texto
+transfo-xl-wt103,Generación de texto
+transformersbook-pegasus-samsum,Generación de texto a texto
+tribbiani-vicuna-7b,Generación de texto
+trl-internal-testing-tiny-bloomforcausallm,Generación de texto
+trl-internal-testing-tiny-bloomforcausallm-correct-vocab,Generación de texto
+trl-internal-testing-tiny-cohereforcausallm,Generación de texto
+trl-internal-testing-tiny-dbrxforcausallm,Generación de texto
+trl-internal-testing-tiny-gemma2forcausallm,Generación de texto
+trl-internal-testing-tiny-gemmaforcausallm,Generación de texto
+trl-internal-testing-tiny-gpt2lmheadmodel,Generación de texto
+trl-internal-testing-tiny-gptneoxforcausallm,Generación de texto
+trl-internal-testing-tiny-llamaforcausallm-3,Generación de texto
+trl-internal-testing-tiny-llamaforcausallm-3-1,Generación de texto
+trl-internal-testing-tiny-llamaforcausallm-3-2,Generación de texto
+trl-internal-testing-tiny-mistralforcausallm-0-1,Generación de texto
+trl-internal-testing-tiny-mistralforcausallm-0-2,Generación de texto
+trl-internal-testing-tiny-optforcausallm,Generación de texto
+trl-internal-testing-tiny-phi3forcausallm,Generación de texto
+trl-internal-testing-tiny-qwen2forcausallm-2-5,Generación de texto
+trl-internal-testing-tiny-qwen2forcausallm-2-5,Generación de texto
+trl-internal-testing-tiny-t5forconditionalgeneration,Generación de texto
+troydoesai-llama-3-1-8b-instruct,Generación de texto
+tscholak-1wnr382e,Generación de texto a texto
+tscholak-cxmefzzi,Generación de texto a texto
+tsuzumi-7b,Finalización del chat
+tuner007-pegasus-paraphrase,Generación de texto a texto
+tuner007-pegasus-qa,Generación de texto a texto
+turkunlp-gpt3-finnish-small,Generación de texto
+uclanlp-plbart-base,Generación de texto a texto
+uclanlp-plbart-java-cs,Generación de texto a texto
+uclanlp-plbart-python-en-xx,Generación de texto a texto
+uer-gpt2-chinese-cluecorpussmall,Generación de texto
+uer-gpt2-chinese-lyric,Generación de texto
+uer-gpt2-chinese-poem,Generación de texto
+uer-gpt2-distil-chinese-cluecorpussmall,Generación de texto
+unicamp-dl-ptt5-base-portuguese-vocab,Generación de texto a texto
+universitytehran-persianmind-v1-0,Generación de texto
+unsloth-deepseek-r1-distill-llama-8b,Generación de texto
+unsloth-gemma-2-9b-bnb-4bit,Generación de texto
+unsloth-llama-3-2-1b,Generación de texto
+unsloth-llama-3-2-1b-bnb-4bit,Generación de texto
+unsloth-llama-3-2-1b-instruct-bnb-4bit,Generación de texto
+unsloth-llama-3-2-3b,Generación de texto
+unsloth-llama-3-2-3b-bnb-4bit,Generación de texto
+unsloth-llama-3-2-3b-instruct,Generación de texto
+unsloth-llama-3-2-3b-instruct-bnb-4bit,Generación de texto
+unsloth-llama-3-2-3b-instruct-unsloth-bnb-4bit,Generación de texto
+unsloth-llama-3-2-3b-unsloth-bnb-4bit,Generación de texto
+unsloth-llama-3-3-70b-instruct-bnb-4bit,Generación de texto
+unsloth-llama-3-8b-bnb-4bit,Generación de texto
+unsloth-llama-3-8b-instruct-bnb-4bit,Generación de texto
+unsloth-meta-llama-3-1-70b-instruct,Generación de texto
+unsloth-mistral-7b-bnb-4bit,Generación de texto
+unsloth-mistral-7b-instruct-v0-2-bnb-4bit,Generación de texto
+unsloth-mistral-7b-instruct-v0-3-bnb-4bit,Generación de texto
+unsloth-mistral-7b-v0-3-bnb-4bit,Generación de texto
+unsloth-mistral-nemo-instruct-2407,Generación de texto
+unsloth-mistral-nemo-instruct-2407-bnb-4bit,Generación de texto
+unsloth-mistral-nemo-instruct-2407-bnb-4bit,Generación de texto
+unsloth-mistral-small-24b-instruct-2501,Generación de texto
+unsloth-mistral-small-24b-instruct-2501-unsloth-bnb-4bit,Generación de texto
+unsloth-phi-3-5-mini-instruct,Generación de texto
+unsloth-phi-3-5-mini-instruct-bnb-4bit,Generación de texto
+unsloth-phi-3-medium-4k-instruct,Generación de texto
+unsloth-phi-3.5-mini-instruct,Generación de texto
+unsloth-phi-4,Generación de texto
+unsloth-phi-4-bnb-4bit,Generación de texto
+unsloth-phi-4-unsloth-bnb-4bit,Generación de texto
+unsloth-qwen2-5-0-5b-instruct,Generación de texto
+unsloth-qwen2-5-0-5b-instruct,Generación de texto
+unsloth-qwen2-5-0-5b-instruct-bnb-4bit,Generación de texto
+unsloth-qwen2-5-0-5b-instruct-unsloth-bnb-4bit,Generación de texto
+unsloth-qwen2-5-1-5b-instruct,Generación de texto
+unsloth-qwen2-5-1-5b-instruct-unsloth-bnb-4bit,Generación de texto
+unsloth-qwen2-5-3b-instruct-bnb-4bit,Generación de texto
+unsloth-qwen2-5-3b-instruct-unsloth-bnb-4bit,Generación de texto
+upstage-solar-10-7b-instruct-v1-0,Generación de texto
+upstage-solar-10.7b-v1.0,Generación de texto
+urukhan-t5-russian-spell,Generación de texto a texto
+vagosolutions-llama-3-sauerkrautlm-8b-instruct,Generación de texto
+vagosolutions-llama-3.1-sauerkrautlm-70b-instruct,Generación de texto
+vagosolutions-llama-3.1-sauerkrautlm-8b-instruct,Generación de texto
+vagosolutions-sauerkrautlm-nemo-12b-instruct,Generación de texto
+valhalla-s2t-mustc-multilinguial-medium,Generación de texto a texto
+valhalla-t5-base-e2e-qg,Generación de texto a texto
+valhalla-t5-base-qa-qg-hl,Generación de texto a texto
+valhalla-t5-small-e2e-qg,Generación de texto a texto
+valhalla-t5-small-qa-qg-hl,Generación de texto a texto
+valhalla-t5-small-qg-hl,Generación de texto a texto
+valhalla-t5-small-qg-prepend,Generación de texto a texto
+vamsi-t5-paraphrase-paws,Generación de texto
+vblagoje-bart-lfqa,Generación de texto a texto
+vennify-t5-base-grammar-correction,Generación de texto a texto
+vietai-gpt-j-6b-vietnamese-news,Generación de texto
+vietai-gpt-neo-1.3b-vietnamese-news,Generación de texto
+vikhrmodels-it-5-2-fp16-cp,Generación de texto
+vikhrmodels-vikhr-nemo-12b-instruct-r-21-09-24,Generación de texto
+voidful-context-only-question-generator,Generación de texto a texto
+vonjack-phi-3-mini-4k-instruct-llamafied,Generación de texto
+wangrongsheng-minigpt-4-llama-7b,Generación de texto
+weblab-geniac-tanuki-8b-dpo-v1.0,Generación de texto
+wikidepia-indot5-base-paraphrase,Generación de texto a texto
+xenova-sponsorblock-small,Generación de texto a texto
+xenova-tiny-random-phi3forcausallm,Generación de texto
+xlabs-ai-xflux-text-encoders,Generación de texto
+xlnet-base-cased,Generación de texto
+xlnet-large-cased,Generación de texto
+yahma-llama-7b-hf,Generación de texto
+yale-lily-brio-cnndm-uncased,Generación de texto a texto
+yanolja-eeve-korean-instruct-10-8b-v1-0,Generación de texto
+ybelkada-tiny-random-t5forconditionalgeneration-calibrated,Generación de texto
+yentinglin-llama-3-taiwan-70b-instruct,Generación de texto
+yeungnlp-firefly-1b4,Generación de texto
+yeungnlp-firefly-2b6,Generación de texto
+yjernite-bart-eli5,Generación de texto a texto
+yuanzhoulvpi-gpt2-chinese,Generación de texto
+yurtsai-yurts-python-code-gen-30-sparse,Generación de texto
+zixtrauce-baekbot,Conversacional
+zixtrauce-bdbot4epoch,Conversacional
+zixtrauce-johnbot,Conversacional
