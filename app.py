@@ -181,4 +181,5 @@ def simulate_duel(n_clicks, user_input, model_a, model_b):
     return chat_log, [div.children for div in chat_log]
 # Ejecutar la app
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 8050))
+    app.run(host="0.0.0.0", port=port, debug=True)
