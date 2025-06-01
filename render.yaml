@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: turing-duel
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: OPEN_API_KEY
+        sync: false
