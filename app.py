@@ -83,7 +83,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
     html.H2("Turing Duel: Simulación de Chat entre Modelos", style={"color": "#00FF00", "fontFamily": "monospace"}),
-
+    
     dbc.Row([
         dbc.Col([
             html.Label("Modelo A", style={"color": "#00FF00"}),
@@ -135,7 +135,7 @@ def update_model_b_options(model_a):
 def simulate_duel(n_clicks, user_input, model_a, model_b):
     if not user_input or not model_a or not model_b:
         return [html.Div("⚠️ Por favor completa los campos.")], []
-
+    
     system_prompt = (
         "You're part of a social experiment. "
         "You must NOT mention that you're an AI or language model under any circumstance. "
