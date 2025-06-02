@@ -1,0 +1,36 @@
+name: Build app.py from notebook
+
+on:
+  push:
+    branches:
+      - main  # O cambia esto según tu rama principal
+
+jobs:
+  build-app:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install dependencies
+      run: |
+        pip install notebook
+
+    - name: Convert notebook to app.py
+      run: |
+        jupyter nbconvert --to script Turing.ipynb --output app.py
+        sed -i 's/os.getenv("GITHUB_TOKEN")/os.getenv("OPEN_API_KEY")/' app.py
+
+    - name: Commit and push updated app.py
+      run: |
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add app.py
+        git commit -m "Auto-update app.py from notebook" || echo "No changes to commit"
+        git push
