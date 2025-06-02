@@ -24,7 +24,7 @@ jobs:
 
     - name: Convert notebook to app.py
       run: |
-        jupyter nbconvert --to script Turing.ipynb --output app.py
+        jupyter nbconvert --to python Turing.ipynb --output app.py
         sed -i 's/os.getenv("GITHUB_TOKEN")/os.getenv("OPEN_API_KEY")/' app.py
 
     - name: Commit and push updated app.py
