@@ -82,7 +82,7 @@ input_style = {
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
-    html.H2("Turing Duel: Simulación de Chat entre Modelos", style={"color": "#00FF00", "fontFamily": "monospace"}),
+    html.H2("Turing Duel: Simulación de Chat entre Modelos TXT", style={"color": "#00FF00", "fontFamily": "monospace"}),
     
     dbc.Row([
         dbc.Col([
