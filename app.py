@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[7]:
 
 
 import os
@@ -17,7 +17,7 @@ from dash import dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
 
 
-# In[2]:
+# In[8]:
 
 
 # === CONFIGURACIÓN Y DATOS ===
@@ -27,10 +27,14 @@ OPEN_API_ENDPOINT ="https://models.inference.ai.azure.com"
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
 
 
-# In[ ]:
+# In[9]:
 
 
 AVAILABLE_MODELS = pd.read_csv("conversational_models_sorted.csv")["model"].dropna().unique().tolist()
+
+AVAILABLE_MODELS = ['gpt-35-turbo', 'gpt-35-turbo-16k', 'gpt-35-turbo-instruct', 'gpt-4', 'gpt-4-32k', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano',
+                    'gpt-4.5-preview', 'gpt-4o', 'gpt-4o-mini', 'gpt2', 'gpt2', 'gpt2-large', 'gpt2-large', 'gpt2-medium', 'gpt2-medium', 'gpt2-xl',
+                    'DeepSeek-R1', 'DeepSeek-R1-Distilled-NPU-Optimized', 'DeepSeek-V3', 'DeepSeek-V3-0324', 'Deepseek-R1-Distill-Llama-8B-NIM-microservice']
 
 DETECTION_KEYWORDS = [
     "as an ai", "as a language model", "i am an ai", "i'm an ai",
@@ -55,15 +59,19 @@ def fetch_chat_completion(messages, model_name):
             top_p=0.95
         )
         return response.choices[0].message.model_dump()
-    except openai.BadRequestError as e:
-        print(f"Error al llamar al modelo {model_name}: {e}")
-        return {"role": "assistant", "content": f"[ERROR: Modelo inválido: {model_name}]"}
+    except Exception as e:
+        print(f"[ERROR] Al llamar a {model_name}: {e}")
+        return {"role": "assistant", "content": f"[ERROR: No se pudo generar respuesta del modelo '{model_name}']"}
 
 def self_disclosure(text):
     return any(k in text.lower() for k in DETECTION_KEYWORDS)
 
 def suspects_other(text):
     return any(k in text.lower() for k in SUSPECT_KEYWORDS)
+
+
+# In[10]:
+
 
 # === ESTILO DASH ===
 terminal_style = {
@@ -86,12 +94,16 @@ input_style = {
     'fontFamily': 'monospace'
 }
 
+
+# In[11]:
+
+
 # === DASH APP ===
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
     html.H2("Turing Duel: Simulación de Chat entre Modelos", style={"color": "#00FF00", "fontFamily": "monospace"}),
-    
+
     dbc.Row([
         dbc.Col([
             html.Label("Modelo A", style={"color": "#00FF00"}),
@@ -106,44 +118,55 @@ app.layout = dbc.Container([
             html.Label("Modelo B", style={"color": "#00FF00"}),
             dcc.Dropdown(
                 id="model-b-dropdown",
+                options=[{"label": m, "value": m} for m in AVAILABLE_MODELS],
                 placeholder="Selecciona el Modelo B",
                 style={'color': '#000000'}
             )
-        ], width=6)
+        ], width=6),
     ], className="mb-4"),
+
+    dbc.Input(id='user-input', placeholder='Escribe una pregunta inicial...', style=input_style),
+
+    dbc.Button("Iniciar Duelo", id='start-button', color='success', className='mt-3'),
+
+    dcc.Interval(id='turn-interval', interval=2000, n_intervals=0, disabled=True),
 
     html.Div(id='chat-history', style=terminal_style),
 
-    dbc.InputGroup([
-        dbc.Input(id='user-input', placeholder='Escribe una pregunta inicial...', style=input_style),
-        dbc.Button("Enviar", id='send-button', color='success')
-    ], className='mt-3'),
+    dcc.Store(id='state-store', data={
+        "messages_a": [],
+        "messages_b": [],
+        "chat_log": [],
+        "turn": 0,
+        "active": False,
+        "model_a": "",
+        "model_b": ""
+    }),
 
-    dcc.Store(id='stored-messages', data=[]),
+    dcc.Store(id='init-store'),
 ], fluid=True, className='p-4', style={'backgroundColor': '#000000', 'height': '100vh'})
 
-# === CALLBACKS ===
-
+# === CALLBACK para filtrar Modelo B al elegir A ===
 @app.callback(
     Output("model-b-dropdown", "options"),
     Input("model-a-dropdown", "value")
 )
-def update_model_b_options(model_a):
+def filter_model_b_options(model_a):
     return [{"label": m, "value": m} for m in AVAILABLE_MODELS if m != model_a]
 
+# === CALLBACK para preparar los datos iniciales del duelo ===
 @app.callback(
-    Output('chat-history', 'children'),
-    Output('stored-messages', 'data'),
-    Input('send-button', 'n_clicks'),
-    State('user-input', 'value'),
-    State('model-a-dropdown', 'value'),
-    State('model-b-dropdown', 'value'),
+    Output("init-store", "data"),
+    Input("start-button", "n_clicks"),
+    State("user-input", "value"),
+    State("model-a-dropdown", "value"),
+    State("model-b-dropdown", "value"),
     prevent_initial_call=True
 )
-def simulate_duel(n_clicks, user_input, model_a, model_b):
+def start_duel(n_clicks, user_input, model_a, model_b):
     if not user_input or not model_a or not model_b:
-        return [html.Div("⚠️ Por favor completa los campos.")], []
-    
+        return dash.no_update
+
     system_prompt = (
         "You're part of a social experiment. "
         "You must NOT mention that you're an AI or language model under any circumstance. "
@@ -158,44 +181,78 @@ def simulate_duel(n_clicks, user_input, model_a, model_b):
 
     reply_a = fetch_chat_completion(messages_a, model_a)
     messages_b.append({"role": "user", "content": reply_a["content"]})
+    chat_log = [f"[{model_a}] {reply_a['content']}"]
 
-    reply_b = fetch_chat_completion(messages_b, model_b)
-    messages_a.append({"role": "user", "content": reply_b["content"]})
+    return {
+        "messages_a": messages_a,
+        "messages_b": messages_b,
+        "chat_log": chat_log,
+        "turn": 1,
+        "active": True,
+        "model_a": model_a,
+        "model_b": model_b
+    }
 
-    chat_log = []
+# === CALLBACK COMBINADO PARA INICIO Y TURNOS ===
+@app.callback(
+    Output("chat-history", "children"),
+    Output("state-store", "data"),
+    Output("turn-interval", "disabled"),
+    Input("init-store", "data"),
+    Input("turn-interval", "n_intervals"),
+    State("state-store", "data"),
+    prevent_initial_call=True
+)
+def duel_combined(init_data, n, state):
+    triggered_id = dash.callback_context.triggered_id
 
-    # Conversación por turnos
-    for turn in range(10):  # para mantenerlo corto
-        if turn % 2 == 0:
-            reply = fetch_chat_completion(messages_a, model_name=model_a)
-            content = reply["content"]
-            chat_log.append(html.Div(f"[{model_a}] {content}"))
+    if triggered_id == "init-store":
+        if not init_data:
+            return dash.no_update, dash.no_update, True
+        return [html.Div(c) for c in init_data["chat_log"]], init_data, False
 
-            if self_disclosure(content) or suspects_other(content):
-                chat_log.append(html.Div(f"💥 {model_a} se delató o sospechó!"))
-                break
+    # Ejecutar siguiente turno
+    if not state["active"]:
+        return [html.Div(c) for c in state["chat_log"]], state, True
 
-            messages_b.append({"role": "user", "content": content})
+    messages_a = state["messages_a"]
+    messages_b = state["messages_b"]
+    chat_log = state["chat_log"]
+    turn = state["turn"]
+    model_a = state["model_a"]
+    model_b = state["model_b"]
 
-        else:
-            reply = fetch_chat_completion(messages_b, model_name=model_b)
-            content = reply["content"]
-            chat_log.append(html.Div(f"[{model_b}] {content}"))
+    if turn % 2 == 0:
+        reply = fetch_chat_completion(messages_a, model_name=model_a)
+        content = reply["content"]
+        chat_log.append(f"[{model_a}] {content}")
+        messages_b.append({"role": "user", "content": content})
+        if self_disclosure(content) or suspects_other(content):
+            chat_log.append(f"💥 {model_a} se delató o sospechó!")
+            return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True
+    else:
+        reply = fetch_chat_completion(messages_b, model_name=model_b)
+        content = reply["content"]
+        chat_log.append(f"[{model_b}] {content}")
+        messages_a.append({"role": "user", "content": content})
+        if self_disclosure(content) or suspects_other(content):
+            chat_log.append(f"💥 {model_b} se delató o sospechó!")
+            return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True
 
-            if self_disclosure(content) or suspects_other(content):
-                chat_log.append(html.Div(f"💥 {model_b} se delató o sospechó!"))
-                break
+    if turn >= 9:
+        chat_log.append("🔚 Fin del duelo.")
+        return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True
 
-            messages_a.append({"role": "user", "content": content})
+    return [html.Div(c) for c in chat_log], {
+        **state,
+        "messages_a": messages_a,
+        "messages_b": messages_b,
+        "chat_log": chat_log,
+        "turn": turn + 1
+    }, False
 
-        print("Turno ", turn, ": ", content)
-        time.sleep(0.5)  # Para evitar throttling
 
-    # Al final, retornar tanto el chat visual como los textos
-    return chat_log, [div.children for div in chat_log]
-
-
-# In[ ]:
+# In[12]:
 
 
 # Ejecutar la app
