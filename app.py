@@ -223,7 +223,7 @@ def unified_duel_handler(init_data, n, continue_clicks, state):
     }, False, {'display': 'none'}, []
 
 
-# In[9]:
+# In[ ]:
 
 
 if __name__ == '__main__':
