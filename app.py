@@ -27,7 +27,7 @@ OPEN_API_ENDPOINT ="https://models.inference.ai.azure.com"
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
 
 
-# In[3]:
+# In[ ]:
 
 
 AVAILABLE_MODELS = pd.read_csv("conversational_models_sorted.csv")["model"].dropna().unique().tolist()
@@ -90,7 +90,7 @@ input_style = {
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
-    html.H2("Turing Duel: Simulación de Chat entre Modelos TXT", style={"color": "#00FF00", "fontFamily": "monospace"}),
+    html.H2("Turing Duel: Simulación de Chat entre Modelos", style={"color": "#00FF00", "fontFamily": "monospace"}),
     
     dbc.Row([
         dbc.Col([
