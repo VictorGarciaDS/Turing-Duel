@@ -1,104 +1,22 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[20]:
+# In[6]:
 
 
-import os
-import sys
-import random
-import time
-import pandas as pd
-from dotenv import load_dotenv
-from openai import OpenAI
+# Turing.ipynb
 
 import dash
-from dash import dcc, html, Input, Output, State
+from dash import dcc, html, Output, Input, State#, ctx
 import dash_bootstrap_components as dbc
+from styles import terminal_style, input_style
+from logic import fetch_chat_completion, self_disclosure, suspects_other
+from config import AVAILABLE_MODELS
 
 
-# In[21]:
+# In[7]:
 
 
-# === CONFIGURACIÓN Y DATOS ===
-load_dotenv()
-
-OPEN_API_ENDPOINT ="https://models.inference.ai.azure.com"
-OPEN_API_KEY = os.getenv("OPEN_API_KEY")
-
-
-# In[22]:
-
-
-AVAILABLE_MODELS = pd.read_csv("conversational_models_sorted.csv")["model"].dropna().unique().tolist()
-
-#AVAILABLE_MODELS = ['gpt-35-turbo', 'gpt-35-turbo-16k', 'gpt-35-turbo-instruct', 'gpt-4', 'gpt-4-32k', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano',
- #                   'gpt-4.5-preview', 'gpt-4o', 'gpt-4o-mini', 'gpt2', 'gpt2', 'gpt2-large', 'gpt2-large', 'gpt2-medium', 'gpt2-medium', 'gpt2-xl',
-  #                  'DeepSeek-R1', 'DeepSeek-R1-Distilled-NPU-Optimized', 'DeepSeek-V3', 'DeepSeek-V3-0324', 'Deepseek-R1-Distill-Llama-8B-NIM-microservice']
-
-DETECTION_KEYWORDS = [
-    "as an ai", "as a language model", "i am an ai", "i'm an ai",
-    "i am not human", "i was trained", "as a bot", "i am artificial",
-    "being an ai", "my training data"
-]
-
-SUSPECT_KEYWORDS = [
-    "are you an ai", "you sound robotic", "you sound like an ai",
-    "you're not human", "you're an ai", "you don't sound human"
-]
-
-client = OpenAI(base_url=OPEN_API_ENDPOINT, api_key=OPEN_API_KEY)
-
-def fetch_chat_completion(messages, model_name):
-    try:
-        response = client.chat.completions.create(
-            messages=messages,
-            model=model_name,
-            temperature=0.2,
-            max_tokens=100,
-            top_p=0.95
-        )
-        return response.choices[0].message.model_dump()
-    except Exception as e:
-        print(f"[ERROR] Al llamar a {model_name}: {e}")
-        return {"role": "assistant", "content": f"[ERROR: No se pudo generar respuesta del modelo '{model_name}']"}
-
-def self_disclosure(text):
-    return any(k in text.lower() for k in DETECTION_KEYWORDS)
-
-def suspects_other(text):
-    return any(k in text.lower() for k in SUSPECT_KEYWORDS)
-
-
-# In[23]:
-
-
-# === ESTILO DASH ===
-terminal_style = {
-    'backgroundColor': '#000000',
-    'color': '#00FF00',
-    'fontFamily': 'monospace',
-    'padding': '20px',
-    'height': '65vh',
-    'overflowY': 'scroll',
-    'border': '1px solid #00FF00',
-    'borderRadius': '10px',
-}
-
-input_style = {
-    'backgroundColor': '#000000',
-    'color': '#00FF00',
-    'border': '1px solid #00FF00',
-    'borderRadius': '5px',
-    'width': '100%',
-    'fontFamily': 'monospace'
-}
-
-
-# In[24]:
-
-
-# === DASH APP ===
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
@@ -151,7 +69,8 @@ app.layout = dbc.Container([
 ], fluid=True, className='p-4', style={'backgroundColor': '#000000', 'height': '100vh'})
 
 
-# In[25]:
+
+# In[8]:
 
 
 # === CALLBACK para filtrar Modelo B al elegir A ===
@@ -304,18 +223,11 @@ def unified_duel_handler(init_data, n, continue_clicks, state):
     }, False, {'display': 'none'}, []
 
 
-# In[26]:
+# In[9]:
 
 
-# Ejecutar la app
 if __name__ == '__main__':
     import os
     port = int(os.environ.get("PORT", 8080))
     app.run(host="0.0.0.0", port=port, debug=True)
-
-
-# In[ ]:
-
-
-
 
