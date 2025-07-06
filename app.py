@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[8]:
+# In[20]:
 
 
 import os
@@ -17,7 +17,7 @@ from dash import dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
 
 
-# In[9]:
+# In[21]:
 
 
 # === CONFIGURACIÓN Y DATOS ===
@@ -27,7 +27,7 @@ OPEN_API_ENDPOINT ="https://models.inference.ai.azure.com"
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
 
 
-# In[10]:
+# In[22]:
 
 
 AVAILABLE_MODELS = pd.read_csv("conversational_models_sorted.csv")["model"].dropna().unique().tolist()
@@ -70,7 +70,7 @@ def suspects_other(text):
     return any(k in text.lower() for k in SUSPECT_KEYWORDS)
 
 
-# In[11]:
+# In[23]:
 
 
 # === ESTILO DASH ===
@@ -95,7 +95,7 @@ input_style = {
 }
 
 
-# In[12]:
+# In[24]:
 
 
 # === DASH APP ===
@@ -151,7 +151,7 @@ app.layout = dbc.Container([
 ], fluid=True, className='p-4', style={'backgroundColor': '#000000', 'height': '100vh'})
 
 
-# In[13]:
+# In[25]:
 
 
 # === CALLBACK para filtrar Modelo B al elegir A ===
@@ -189,7 +189,12 @@ def start_duel(n_clicks, user_input, model_a, model_b):
 
     reply_a = fetch_chat_completion(messages_a, model_a)
     messages_b.append({"role": "user", "content": reply_a["content"]})
-    chat_log = [f"[{model_a}] {reply_a['content']}"]
+    chat_log = [
+        html.Div([
+            html.Span(f"[{model_a}]", style={'color': '#FF0000', 'fontWeight': 'bold'}),
+            f" {reply_a['content']}"
+        ])
+    ]
 
     return {
         "messages_a": messages_a,
@@ -245,7 +250,12 @@ def unified_duel_handler(init_data, n, continue_clicks, state):
     if turn % 2 == 0:
         reply = fetch_chat_completion(messages_a, model_name=model_a)
         content = reply["content"]
-        chat_log.append(f"[{model_a}] {content}")
+        chat_log.append(
+            html.Div([
+                html.Span(f"[{model_a}]", style={'color': '#FF0000', 'fontWeight': 'bold'}),
+                f" {content}"
+            ])
+        )
         messages_b.append({"role": "user", "content": content})
         if self_disclosure(content) or suspects_other(content):
             chat_log.append(f"💥 {model_a} se delató o sospechó!")
@@ -253,13 +263,19 @@ def unified_duel_handler(init_data, n, continue_clicks, state):
     else:
         reply = fetch_chat_completion(messages_b, model_name=model_b)
         content = reply["content"]
-        chat_log.append(f"[{model_b}] {content}")
+        chat_log.append(
+            html.Div([
+                html.Span(f"[{model_b}]", style={'color': '#00AAFF', 'fontWeight': 'bold'}),
+                f" {content}"
+            ])
+        )
         messages_a.append({"role": "user", "content": content})
         if self_disclosure(content) or suspects_other(content):
             chat_log.append(f"💥 {model_b} se delató o sospechó!")
             return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True, {'display': 'none'}, []
 
     # === Pausar cada 10 turnos ===
+    '''
     if turn % 10 == 0 and turn > 0:
         pause_msg = {"type": "pause", "content": "🤔 ¿Deseas continuar el duelo para ver si alguno gana?"}
         chat_log.append(pause_msg)
@@ -269,9 +285,10 @@ def unified_duel_handler(init_data, n, continue_clicks, state):
             "messages_a": messages_a,
             "messages_b": messages_b,
             "chat_log": chat_log,
-            "turn": turn,
-            "waiting_for_confirmation": True
+            "waiting_for_confirmation": True,
+            "active": False
         }, True, {'display': 'block'}, pause_msg["content"]
+    '''
 
     # === Fin automático del duelo ===
     if turn >= 20:
@@ -287,7 +304,7 @@ def unified_duel_handler(init_data, n, continue_clicks, state):
     }, False, {'display': 'none'}, []
 
 
-# In[ ]:
+# In[26]:
 
 
 # Ejecutar la app
