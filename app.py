@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[7]:
+# In[8]:
 
 
 import os
@@ -17,7 +17,7 @@ from dash import dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
 
 
-# In[8]:
+# In[9]:
 
 
 # === CONFIGURACIÓN Y DATOS ===
@@ -27,14 +27,14 @@ OPEN_API_ENDPOINT ="https://models.inference.ai.azure.com"
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
 
 
-# In[9]:
+# In[10]:
 
 
 AVAILABLE_MODELS = pd.read_csv("conversational_models_sorted.csv")["model"].dropna().unique().tolist()
 
-AVAILABLE_MODELS = ['gpt-35-turbo', 'gpt-35-turbo-16k', 'gpt-35-turbo-instruct', 'gpt-4', 'gpt-4-32k', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano',
-                    'gpt-4.5-preview', 'gpt-4o', 'gpt-4o-mini', 'gpt2', 'gpt2', 'gpt2-large', 'gpt2-large', 'gpt2-medium', 'gpt2-medium', 'gpt2-xl',
-                    'DeepSeek-R1', 'DeepSeek-R1-Distilled-NPU-Optimized', 'DeepSeek-V3', 'DeepSeek-V3-0324', 'Deepseek-R1-Distill-Llama-8B-NIM-microservice']
+#AVAILABLE_MODELS = ['gpt-35-turbo', 'gpt-35-turbo-16k', 'gpt-35-turbo-instruct', 'gpt-4', 'gpt-4-32k', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4.1-nano',
+ #                   'gpt-4.5-preview', 'gpt-4o', 'gpt-4o-mini', 'gpt2', 'gpt2', 'gpt2-large', 'gpt2-large', 'gpt2-medium', 'gpt2-medium', 'gpt2-xl',
+  #                  'DeepSeek-R1', 'DeepSeek-R1-Distilled-NPU-Optimized', 'DeepSeek-V3', 'DeepSeek-V3-0324', 'Deepseek-R1-Distill-Llama-8B-NIM-microservice']
 
 DETECTION_KEYWORDS = [
     "as an ai", "as a language model", "i am an ai", "i'm an ai",
@@ -70,7 +70,7 @@ def suspects_other(text):
     return any(k in text.lower() for k in SUSPECT_KEYWORDS)
 
 
-# In[10]:
+# In[11]:
 
 
 # === ESTILO DASH ===
@@ -95,7 +95,7 @@ input_style = {
 }
 
 
-# In[11]:
+# In[12]:
 
 
 # === DASH APP ===
@@ -129,6 +129,9 @@ app.layout = dbc.Container([
 
     dbc.Button("Iniciar Duelo", id='start-button', color='success', className='mt-3'),
 
+    html.Div(id="continue-prompt", children=[], style={'textAlign': 'center', 'marginTop': '20px'}),
+    dbc.Button("Continuar Duelo", id="continue-button", color="warning", style={'display': 'none'}, className='mb-4'),
+
     dcc.Interval(id='turn-interval', interval=2000, n_intervals=0, disabled=True),
 
     html.Div(id='chat-history', style=terminal_style),
@@ -140,11 +143,16 @@ app.layout = dbc.Container([
         "turn": 0,
         "active": False,
         "model_a": "",
-        "model_b": ""
+        "model_b": "",
+        "waiting_for_confirmation": False
     }),
 
     dcc.Store(id='init-store'),
 ], fluid=True, className='p-4', style={'backgroundColor': '#000000', 'height': '100vh'})
+
+
+# In[13]:
+
 
 # === CALLBACK para filtrar Modelo B al elegir A ===
 @app.callback(
@@ -190,7 +198,8 @@ def start_duel(n_clicks, user_input, model_a, model_b):
         "turn": 1,
         "active": True,
         "model_a": model_a,
-        "model_b": model_b
+        "model_b": model_b,
+        "waiting_for_confirmation": False
     }
 
 # === CALLBACK COMBINADO PARA INICIO Y TURNOS ===
@@ -198,23 +207,34 @@ def start_duel(n_clicks, user_input, model_a, model_b):
     Output("chat-history", "children"),
     Output("state-store", "data"),
     Output("turn-interval", "disabled"),
+    Output("continue-button", "style"),
+    Output("continue-prompt", "children"),
     Input("init-store", "data"),
     Input("turn-interval", "n_intervals"),
+    Input("continue-button", "n_clicks"),
     State("state-store", "data"),
     prevent_initial_call=True
 )
-def duel_combined(init_data, n, state):
+def unified_duel_handler(init_data, n, continue_clicks, state):
     triggered_id = dash.callback_context.triggered_id
 
     if triggered_id == "init-store":
         if not init_data:
-            return dash.no_update, dash.no_update, True
-        return [html.Div(c) for c in init_data["chat_log"]], init_data, False
+            return dash.no_update, dash.no_update, True, {'display': 'none'}, []
+        return [html.Div(c) for c in init_data["chat_log"]], init_data, False, {'display': 'none'}, []
 
-    # Ejecutar siguiente turno
-    if not state["active"]:
-        return [html.Div(c) for c in state["chat_log"]], state, True
+    if triggered_id == "continue-button":
+        if not state["waiting_for_confirmation"]:
+            return dash.no_update, dash.no_update, dash.no_update, dash.no_update, dash.no_update
+        state["waiting_for_confirmation"] = False
+        return [html.Div(c) if isinstance(c, str) else html.Div(c["content"], style={"color": "yellow", "textAlign": "center"})
+                for c in state["chat_log"]], state, False, {'display': 'none'}, []
 
+    if not state["active"] or state["waiting_for_confirmation"]:
+        return [html.Div(c) if isinstance(c, str) else html.Div(c["content"], style={"color": "yellow", "textAlign": "center"})
+                for c in state["chat_log"]], state, True, {'display': 'block' if state.get("waiting_for_confirmation") else 'none'}, []
+
+    # === Turno del duelo ===
     messages_a = state["messages_a"]
     messages_b = state["messages_b"]
     chat_log = state["chat_log"]
@@ -229,7 +249,7 @@ def duel_combined(init_data, n, state):
         messages_b.append({"role": "user", "content": content})
         if self_disclosure(content) or suspects_other(content):
             chat_log.append(f"💥 {model_a} se delató o sospechó!")
-            return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True
+            return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True, {'display': 'none'}, []
     else:
         reply = fetch_chat_completion(messages_b, model_name=model_b)
         content = reply["content"]
@@ -237,11 +257,26 @@ def duel_combined(init_data, n, state):
         messages_a.append({"role": "user", "content": content})
         if self_disclosure(content) or suspects_other(content):
             chat_log.append(f"💥 {model_b} se delató o sospechó!")
-            return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True
+            return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True, {'display': 'none'}, []
 
-    if turn >= 9:
+    # === Pausar cada 10 turnos ===
+    if turn % 10 == 0 and turn > 0:
+        pause_msg = {"type": "pause", "content": "🤔 ¿Deseas continuar el duelo para ver si alguno gana?"}
+        chat_log.append(pause_msg)
+        return [html.Div(c) if isinstance(c, str) else html.Div(c["content"], style={"color": "yellow", "textAlign": "center"})
+                for c in chat_log], {
+            **state,
+            "messages_a": messages_a,
+            "messages_b": messages_b,
+            "chat_log": chat_log,
+            "turn": turn,
+            "waiting_for_confirmation": True
+        }, True, {'display': 'block'}, pause_msg["content"]
+
+    # === Fin automático del duelo ===
+    if turn >= 20:
         chat_log.append("🔚 Fin del duelo.")
-        return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True
+        return [html.Div(c) for c in chat_log], {**state, "chat_log": chat_log, "active": False}, True, {'display': 'none'}, []
 
     return [html.Div(c) for c in chat_log], {
         **state,
@@ -249,10 +284,10 @@ def duel_combined(init_data, n, state):
         "messages_b": messages_b,
         "chat_log": chat_log,
         "turn": turn + 1
-    }, False
+    }, False, {'display': 'none'}, []
 
 
-# In[12]:
+# In[ ]:
 
 
 # Ejecutar la app
