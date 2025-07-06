@@ -16,11 +16,19 @@ import dash
 from dash import dcc, html, Input, Output, State
 import dash_bootstrap_components as dbc
 
+
+# In[2]:
+
+
 # === CONFIGURACIÓN Y DATOS ===
 load_dotenv()
 
 OPEN_API_ENDPOINT ="https://models.inference.ai.azure.com"
 OPEN_API_KEY = os.getenv("OPEN_API_KEY")
+
+
+# In[3]:
+
 
 AVAILABLE_MODELS = pd.read_csv("conversational_models_sorted.csv")["model"].dropna().unique().tolist()
 
@@ -187,7 +195,7 @@ def simulate_duel(n_clicks, user_input, model_a, model_b):
     return chat_log, [div.children for div in chat_log]
 
 
-# In[2]:
+# In[ ]:
 
 
 # Ejecutar la app
