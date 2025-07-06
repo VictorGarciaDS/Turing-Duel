@@ -3,3 +3,4 @@ dash-bootstrap-components
 openai
 pandas
 python-dotenv
+gunicorn

@@ -2,7 +2,7 @@ services:
   - type: web
     name: turing-duel
     env: python
-    buildCommand: ""
+    buildCommand: make build
     startCommand: python app.py
     envVars:
       - key: OPEN_API_KEY
